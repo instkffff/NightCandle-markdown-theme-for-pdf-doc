@@ -1,7 +1,7 @@
 /* 基础排版 */
 body {
     font-family: "Segoe UI", "微软雅黑", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 12px;
+    font-size: 14px;
     /* 统一行高：确保所有纯文本内容基础间距一致 */
     line-height: 1.6; 
     color: #000000;
@@ -15,6 +15,8 @@ p, blockquote, ul, ol, dl, table, pre {
     margin-top: 0;
     margin-bottom: 16px;
 }
+
+li > p { margin-bottom: 0px; }
 
 /* 标题 - 严格对应原文件像素值 */
 h1, h2, h3, h4, h5, h6 {
@@ -54,7 +56,7 @@ li {
 
 /* 解决多级列表嵌套时的间距问题 */
 li > ul, li > ol {
-    margin-top: 0;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
@@ -64,7 +66,7 @@ li + li { margin-top: 0.25em; }
 /* 代码与预格式化 - 严格对应 12px */
 code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 12px; 
+    font-size: 14px; 
     padding: 0.2em 0.4em;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 3px;
@@ -72,7 +74,7 @@ code {
 
 pre {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 12px;
+    font-size: 14px;
     padding: 16px;
     overflow: auto;
     line-height: 1.45;
